@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hibernate | Mision</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###Hibernate
+
+####注解
+#####Hibernate配置文件
+
+xxx.cfg.xml   默认加载hibernate.cfg.xmlhibernate配置详解  
+
+hibernate.properties  作用与xml相同
+1234567891011121314151617181920212223242526272829303132333435363738394041424">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hibernate">
+<meta property="og:url" content="http://yoursite.com/2017/02/17/title - hibernate/index.html">
+<meta property="og:site_name" content="Mision">
+<meta property="og:description" content="###Hibernate
+
+####注解
+#####Hibernate配置文件
+
+xxx.cfg.xml   默认加载hibernate.cfg.xmlhibernate配置详解  
+
+hibernate.properties  作用与xml相同
+1234567891011121314151617181920212223242526272829303132333435363738394041424">
+<meta property="og:updated_time" content="2017-02-17T06:01:49.627Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hibernate">
+<meta name="twitter:description" content="###Hibernate
+
+####注解
+#####Hibernate配置文件
+
+xxx.cfg.xml   默认加载hibernate.cfg.xmlhibernate配置详解  
+
+hibernate.properties  作用与xml相同
+1234567891011121314151617181920212223242526272829303132333435363738394041424">
+  
+    <link rel="alternative" href="/atom.xml" title="Mision" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Mision</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Mision个人</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Mision</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Mision</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Mision个人</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-title - hibernate" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/17/title - hibernate/" class="article-date">
+  	<time datetime="2017-02-17T06:01:49.545Z" itemprop="datePublished">2017-02-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hibernate
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###Hibernate</p>
+<hr>
+<p>####<a href="http://gityuan.com/2016/01/23/java-annotation/&quot;注解详解&quot;" target="_blank" rel="external">注解</a></p>
+<p>#####Hibernate配置文件</p>
+<ol>
+<li><p><strong>xxx.cfg.xml   默认加载hibernate.cfg.xml<a href="http://www.cnblogs.com/klguang/p/4769085.html" target="_blank" rel="external">hibernate配置详解</a></strong>  </p>
+</li>
+<li><p><strong>hibernate.properties  作用与xml相同</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="meta">&lt;!DOCTYPE hibernate-configuration PUBLIC</span></div><div class="line"></div><div class="line">	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"</div><div class="line"></div><div class="line">	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">hibernate-configuration</span>&gt;</span></div><div class="line"></div><div class="line">	<span class="tag">&lt;<span class="name">session-factory</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库使用的驱动类 --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.driver_class"</span>&gt;</span>oracle.jdbc.driver.OracleDriver<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库连接串  --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.url"</span>&gt;</span>jdbc:oracle:thin:@localhost:1521:orcl<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库连接的用户名  --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.username"</span>&gt;</span>dengou<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库连接的密码  --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.password"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库使用的方言 --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.dialect"</span>&gt;</span>org.hibernate.dialect.Oracle10gDialect<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 指定是否打印SQL语句 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.show_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 格式化sql --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.format_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 指定 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.hbm2ddl.auto"</span>&gt;</span>create<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 映射配置文件 --&gt;</span></div><div class="line">		<span class="comment">&lt;!-- resource指向源文件(xml,等配置文件);class指向类(一般用于注解) --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">mapping</span> <span class="attr">resource</span>=<span class="string">"test/hibernate/emp/Emp.hbm.xml"</span> /&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">session-factory</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">hibernate-configuration</span>&gt;</span></div><div class="line"></div><div class="line">```  </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">****</div><div class="line"></div><div class="line">**hibernate映射**</div><div class="line"></div><div class="line"> 1. xxx.hbm.xml配置映射关系</div><div class="line"></div><div class="line"> 2. 注解方式配置映射 关系</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">```XML</div><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="meta">&lt;!DOCTYPE hibernate-mapping PUBLIC </span></div><div class="line">    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"</div><div class="line">    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">hibernate-mapping</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--  指定类名和表名映射  --&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"test.hibernate.emp.Emp"</span> <span class="attr">table</span>=<span class="string">"emp1"</span> &gt;</span></div><div class="line">    		<span class="comment">&lt;!-- id:配置数据库中的主键在java中的属性名 --&gt;</span></div><div class="line">    		<span class="comment">&lt;!--hibernate主键生成策略：（generator）</span></div><div class="line">    		increment：代理主键，适合于所有数据库，由hibernate维护主键自增，和底层数据库无关，但是不适合于2个或以上hibernate进程。</div><div class="line">			identity：代理主键，适合于Mysql或ms sql server等支持自增的dbms，主键值不由hibernate维护。</div><div class="line">			sequence：代理主键，适合于oracle等支持序列的dbms，主键值不由hibernate维护，由序列产生。</div><div class="line">			native：代理主键，根据底层数据库的具体特性选择适合的主键生成策略，如果是mysql或sqlserver，选择identity，如果是oracle，选择sequence。</div><div class="line">			hilo：代理主键，hibernate把特定表的字段作为hign值，生成主键值</div><div class="line">			uuid.hex：代理主键，hibernate采用uuid 128位算法生成基于字符串的主键值</div><div class="line">			assign：适合于应用程序维护的自然主键。（默认）--&gt;</div><div class="line">    		<span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">"empno"</span> <span class="attr">name</span>=<span class="string">"empno"</span>&gt;</span></div><div class="line">    			<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"native"</span>&gt;</span><span class="tag">&lt;/<span class="name">generator</span>&gt;</span></div><div class="line">    		<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">    		<span class="comment">&lt;!-- property:配置其他属性映射 --&gt;</span></div><div class="line">    		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"ename"</span> <span class="attr">column</span>=<span class="string">"ename"</span> <span class="attr">unique</span>=<span class="string">"true"</span> &gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">    		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"sal"</span> <span class="attr">column</span>=<span class="string">"sal"</span>   /&gt;</span></div><div class="line">    		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"job"</span> <span class="attr">column</span>=<span class="string">"job"</span> /&gt;</span></div><div class="line">    	<span class="tag">&lt;/<span class="name">class</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">hibernate-mapping</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<p><strong>SessionFactory类 :主要负责创建Session的实例</strong><br>sessionFactory.openSession();</p>
+<hr>
+<p><strong>Session类:数据库连接对象（类似Connection）</strong>  </p>
+<ol>
+<li>session.get(Class clazz, Serializable id);根据主键值获取实例对象,没有则返回null </li>
+<li>session.load();  </li>
+<li><p>load()和get()的区别：</p>
+<ol>
+<li>load()方法找不到数据时抛出异常（）,get()方法找不到数据时返回Null;</li>
+<li>get()方法是直接检索数据;load()默认是懒加载,(lazy=true),在需要用到该对象时才进行检索</li>
+</ol>
+</li>
+<li><p>session的缓存</p>
+<ol>
+<li>清空缓存<ul>
+<li>session.clear();清空所有缓存</li>
+<li>session.evict(Object obj);从缓存中清除指定对象    </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>session.flush()</p>
+<ul>
+<li>同步缓存到数据库，执行insert,update,delete等操作，不提交事务</li>
+<li>只有调用session.flush()之后,session缓存中的数据才会发送到数据库,进行真正的持久化操作</li>
+<li>transaction.commit() 提交事务之前会调用 session.flush()</li>
+<li>query执行查询之前也会调用session.flush()</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Transaction类:事务对象</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//创建一个配置对象,.configure()加载hibernate默认配置文件hibernate.cfg.xml,可指定文件加载,如： .configure(String resource)</span></div><div class="line">configuration = <span class="keyword">new</span> Configuration().configure();</div><div class="line"><span class="comment">//创建一个服务对象</span></div><div class="line">ServiceRegistry build = <span class="keyword">new</span> StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();</div><div class="line"><span class="comment">//创建SessionFactory对象</span></div><div class="line">sessionFactory = configuration.buildSessionFactory(build);</div><div class="line"><span class="comment">//创建一个新的session对象</span></div><div class="line">session = sessionFactory.openSession();</div><div class="line"></div><div class="line">session = sessionFactory.currentSession();</div></pre></td></tr></table></figure>
+<hr>
+<p><strong>Query类：通过Query对象，可以使用类似SQL语法的HQL来执行常规的数据库操作</strong></p>
+<ol>
+<li><p>获取Query对象</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Query query = session.createQuery(String HQL);</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行查询 query.list();</p>
+<ol>
+<li><p>如果HQL语句中需要有变量，可以用 “?”    或者 命名参数</p>
+<ol>
+<li>“?” 替代的方法，与java.sql.PreparedStatement的 “?” 用法类似，<strong>注意：query.set(index, value)的index（下标）是从 0 开始</strong><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//sql语句</span></div><div class="line"></div><div class="line">String sql = <span class="string">"Select * from Emp where eno = ? and sal = ?"</span>;</div><div class="line"><span class="comment">//PreparedStatement的set方法示例：</span></div><div class="line">ps.set(<span class="number">1</span>, XXX);</div><div class="line"></div><div class="line">ps.set(<span class="number">2</span>, XXX);</div><div class="line"></div><div class="line"><span class="comment">//hibernate.Query的set方法示例:</span></div><div class="line"></div><div class="line">query.setString(<span class="number">0</span>, XXX);</div><div class="line"></div><div class="line">query.setInteger(<span class="number">1</span>, XXX);</div><div class="line"></div><div class="line"><span class="comment">//Query的命名参数方法</span></div><div class="line">      String sql =<span class="string">"select * from Emp where eno = :eno and sal = :sal"</span>;</div><div class="line">      <span class="comment">//省略几步</span></div><div class="line">      <span class="comment">//1. 可以用query.setString()/query.setXXX()方法</span></div><div class="line">      query.setString(<span class="string">"eno"</span>,XXX);</div><div class="line">      query.setInteger(<span class="string">"sal"</span>,XXX);</div><div class="line">      <span class="comment">//2. 可以用query.setparameter()方法</span></div><div class="line">      query.setParameter(<span class="string">"eno"</span>,XXX,String.Class);</div><div class="line">      query.setParameter(<span class="string">"sal"</span>,XXX,<span class="keyword">int</span>.Class);</div><div class="line">      ...</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2.执行删改     query.executeUpdate();</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>3.<strong>分页</strong></p>
+<blockquote>
+<ul>
+<li>query.setFirstResult(int a);<br>设置开始的行数</li>
+<li>query.setMaxResults(int b);<br>设置查询的行数<br>以上两个设置相当于从a开始往后b行</li>
+</ul>
+</blockquote>
+<hr>
+<p>####hibernate关联关系</p>
+<ol>
+<li><p><strong>One To One (一对一)</strong></p>
+<ul>
+<li>单向<blockquote>
+<p>例如学生 Student 和学生证 StudentId 的关系</p>
+</blockquote>
+</li>
+<li>双向</li>
+</ul>
+</li>
+<li><p><strong>Many To One (多对一)</strong></p>
+<blockquote>
+<p>用来给指定列生成外键约束,外键连接到指定类的映射主键(就是id属性)</p>
+</blockquote>
+</li>
+<li><p><strong>One To Many</strong></p>
+</li>
+<li><strong>Many To Many</strong><br>例如有student和teacher两个类<br>student.hbm.xml配置如下：<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">hibernate-mapping</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"hibernate.ManyToMany.Student"</span> <span class="attr">table</span>=<span class="string">"Student"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">id</span> <span class="attr">name</span>=<span class="string">"sid"</span> <span class="attr">column</span>=<span class="string">"sid"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"native"</span>&gt;</span><span class="tag">&lt;/<span class="name">generator</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"name"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 注意指定中间表表名  --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"teachers"</span> <span class="attr">table</span>=<span class="string">"Teacher_students"</span> <span class="attr">cascade</span>=<span class="string">"save-update"</span> <span class="attr">lazy</span>=<span class="string">"extra"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"sid"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">many-to-many</span> <span class="attr">column</span>=<span class="string">"tid"</span> <span class="attr">class</span>=<span class="string">"hibernate.ManyToMany.Teacher"</span> &gt;</span><span class="tag">&lt;/<span class="name">many-to-many</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">set</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">hibernate-mapping</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>teacher.hbm.xml配置如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">hibernate-mapping</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">class</span>	<span class="attr">name</span>=<span class="string">"hibernate.ManyToMany.Teacher"</span> <span class="attr">table</span>=<span class="string">"Teacher"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">id</span> <span class="attr">name</span>=<span class="string">"tid"</span> <span class="attr">column</span>=<span class="string">"tid"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"native"</span>&gt;</span><span class="tag">&lt;/<span class="name">generator</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"name"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 注意指定中间表表名  --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"students"</span> <span class="attr">table</span>=<span class="string">"Teacher_students"</span>  <span class="attr">inverse</span>=<span class="string">"true"</span> <span class="attr">lazy</span>=<span class="string">"extra"</span> &gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"tid"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">many-to-many</span> <span class="attr">column</span>=<span class="string">"sid"</span> <span class="attr">class</span>=<span class="string">"hibernate.ManyToMany.Student"</span>&gt;</span><span class="tag">&lt;/<span class="name">many-to-many</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">set</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">hibernate-mapping</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<hr>
+<p>####SchemaExport类</p>
+<blockquote>
+<p>:给定一个连接字符串和映射文件，不需输入其他东西就可以按照持久化类和映射文件自动生成数据库架构</p>
+</blockquote>
+<ol>
+<li>public void create(boolean script, boolean export)<blockquote>
+<p>script - print the DDL to the console   (是否打印ddl语句)<br> export - export the script to the database (是否在数据库执行语句)</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<p>####java.util.Calendar 日历类(抽象类)  </p>
+<ol>
+<li><p>静态属性s</p>
+<ul>
+<li><p>YEAR,MONTH,DATE…指的是字段数字值</p>
+</li>
+<li><p>获取字段值 get(int field) field:可以是 YEAR,MONTH… 等属性，也可以是 int 类型的字段数字值</p>
+</li>
+</ul>
+</li>
+<li><p>获取实例</p>
+<ul>
+<li>Calendar.getInstance();  //使用默认时区和语言环境获得一个日历</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>####关于java中几种特殊的注释 (可以被eclipse检测到,在task视图中可查看)</p>
+<ol>
+<li><p>TODO：说明在标识处有功能代码待编写，待实现的功能在说明中会简略说明。</p>
+</li>
+<li><p>FIXME：说明标识处代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明。</p>
+</li>
+<li><p>XXX：说明标识处代码虽然实现了功能，但是实现的方法有待商榷，希望将来能改进，要改进的地方会在说明中简略说明。</p>
+</li>
+</ol>
+<hr>
+<p>  ####<strong>Maven<a href="http://maven.apache.org/download.html&quot;Maven下载&quot;" target="_blank" rel="external">点击下载</a></strong>  </p>
+<ol>
+<li><p>环境变量配置</p>
+<blockquote>
+<p>maven_home=maven解压后的根目录<br>path中添加 %maven_home%\bin<br>配置完成后 cmd 输入 mvn -v 测试是否成功</p>
+</blockquote>
+<p>Maven<a href="http://search.maven.org/#browse&quot;http://search.maven.org/#browse&quot;" target="_blank" rel="external">中央仓库</a>地址:<a href="http://search.maven.org/#browse" target="_blank" rel="external">http://search.maven.org/#browse</a></p>
+</li>
+</ol>
+<hr>
+<p>  ####<strong>Ant</strong></p>
+<hr>
+<hr>
+<pre><code>query对象使用,HQL语句执行
+manytoone关系(多对一)
+onetomany关系(一对多)  
+hibernate改写dao包
+</code></pre>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/17/title - android/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">android</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="title - hibernate" data-title="hibernate" data-url="http://yoursite.com/2017/02/17/title - hibernate/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="hibernate">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2017 Mision
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

@@ -169,6 +169,663 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-title - hibernate" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/17/title - hibernate/" class="article-date">
+  	<time datetime="2017-02-17T06:01:49.545Z" itemprop="datePublished">2017-02-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/17/title - hibernate/">
+        hibernate
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###Hibernate</p>
+<hr>
+<p>####<a href="http://gityuan.com/2016/01/23/java-annotation/&quot;注解详解&quot;" target="_blank" rel="external">注解</a></p>
+<p>#####Hibernate配置文件</p>
+<ol>
+<li><p><strong>xxx.cfg.xml   默认加载hibernate.cfg.xml<a href="http://www.cnblogs.com/klguang/p/4769085.html" target="_blank" rel="external">hibernate配置详解</a></strong>  </p>
+</li>
+<li><p><strong>hibernate.properties  作用与xml相同</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="meta">&lt;!DOCTYPE hibernate-configuration PUBLIC</span></div><div class="line"></div><div class="line">	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"</div><div class="line"></div><div class="line">	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">hibernate-configuration</span>&gt;</span></div><div class="line"></div><div class="line">	<span class="tag">&lt;<span class="name">session-factory</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库使用的驱动类 --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.driver_class"</span>&gt;</span>oracle.jdbc.driver.OracleDriver<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库连接串  --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.url"</span>&gt;</span>jdbc:oracle:thin:@localhost:1521:orcl<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库连接的用户名  --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.username"</span>&gt;</span>dengou<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库连接的密码  --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.password"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"></div><div class="line">		<span class="comment">&lt;!-- 指定数据库使用的方言 --&gt;</span></div><div class="line"></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.dialect"</span>&gt;</span>org.hibernate.dialect.Oracle10gDialect<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 指定是否打印SQL语句 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.show_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 格式化sql --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.format_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 指定 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.hbm2ddl.auto"</span>&gt;</span>create<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 映射配置文件 --&gt;</span></div><div class="line">		<span class="comment">&lt;!-- resource指向源文件(xml,等配置文件);class指向类(一般用于注解) --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">mapping</span> <span class="attr">resource</span>=<span class="string">"test/hibernate/emp/Emp.hbm.xml"</span> /&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">session-factory</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">hibernate-configuration</span>&gt;</span></div><div class="line"></div><div class="line">```  </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">****</div><div class="line"></div><div class="line">**hibernate映射**</div><div class="line"></div><div class="line"> 1. xxx.hbm.xml配置映射关系</div><div class="line"></div><div class="line"> 2. 注解方式配置映射 关系</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">```XML</div><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="meta">&lt;!DOCTYPE hibernate-mapping PUBLIC </span></div><div class="line">    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"</div><div class="line">    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">hibernate-mapping</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--  指定类名和表名映射  --&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"test.hibernate.emp.Emp"</span> <span class="attr">table</span>=<span class="string">"emp1"</span> &gt;</span></div><div class="line">    		<span class="comment">&lt;!-- id:配置数据库中的主键在java中的属性名 --&gt;</span></div><div class="line">    		<span class="comment">&lt;!--hibernate主键生成策略：（generator）</span></div><div class="line">    		increment：代理主键，适合于所有数据库，由hibernate维护主键自增，和底层数据库无关，但是不适合于2个或以上hibernate进程。</div><div class="line">			identity：代理主键，适合于Mysql或ms sql server等支持自增的dbms，主键值不由hibernate维护。</div><div class="line">			sequence：代理主键，适合于oracle等支持序列的dbms，主键值不由hibernate维护，由序列产生。</div><div class="line">			native：代理主键，根据底层数据库的具体特性选择适合的主键生成策略，如果是mysql或sqlserver，选择identity，如果是oracle，选择sequence。</div><div class="line">			hilo：代理主键，hibernate把特定表的字段作为hign值，生成主键值</div><div class="line">			uuid.hex：代理主键，hibernate采用uuid 128位算法生成基于字符串的主键值</div><div class="line">			assign：适合于应用程序维护的自然主键。（默认）--&gt;</div><div class="line">    		<span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">"empno"</span> <span class="attr">name</span>=<span class="string">"empno"</span>&gt;</span></div><div class="line">    			<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"native"</span>&gt;</span><span class="tag">&lt;/<span class="name">generator</span>&gt;</span></div><div class="line">    		<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">    		<span class="comment">&lt;!-- property:配置其他属性映射 --&gt;</span></div><div class="line">    		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"ename"</span> <span class="attr">column</span>=<span class="string">"ename"</span> <span class="attr">unique</span>=<span class="string">"true"</span> &gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">    		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"sal"</span> <span class="attr">column</span>=<span class="string">"sal"</span>   /&gt;</span></div><div class="line">    		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"job"</span> <span class="attr">column</span>=<span class="string">"job"</span> /&gt;</span></div><div class="line">    	<span class="tag">&lt;/<span class="name">class</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">hibernate-mapping</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<p><strong>SessionFactory类 :主要负责创建Session的实例</strong><br>sessionFactory.openSession();</p>
+<hr>
+<p><strong>Session类:数据库连接对象（类似Connection）</strong>  </p>
+<ol>
+<li>session.get(Class clazz, Serializable id);根据主键值获取实例对象,没有则返回null </li>
+<li>session.load();  </li>
+<li><p>load()和get()的区别：</p>
+<ol>
+<li>load()方法找不到数据时抛出异常（）,get()方法找不到数据时返回Null;</li>
+<li>get()方法是直接检索数据;load()默认是懒加载,(lazy=true),在需要用到该对象时才进行检索</li>
+</ol>
+</li>
+<li><p>session的缓存</p>
+<ol>
+<li>清空缓存<ul>
+<li>session.clear();清空所有缓存</li>
+<li>session.evict(Object obj);从缓存中清除指定对象    </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>session.flush()</p>
+<ul>
+<li>同步缓存到数据库，执行insert,update,delete等操作，不提交事务</li>
+<li>只有调用session.flush()之后,session缓存中的数据才会发送到数据库,进行真正的持久化操作</li>
+<li>transaction.commit() 提交事务之前会调用 session.flush()</li>
+<li>query执行查询之前也会调用session.flush()</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Transaction类:事务对象</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//创建一个配置对象,.configure()加载hibernate默认配置文件hibernate.cfg.xml,可指定文件加载,如： .configure(String resource)</span></div><div class="line">configuration = <span class="keyword">new</span> Configuration().configure();</div><div class="line"><span class="comment">//创建一个服务对象</span></div><div class="line">ServiceRegistry build = <span class="keyword">new</span> StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();</div><div class="line"><span class="comment">//创建SessionFactory对象</span></div><div class="line">sessionFactory = configuration.buildSessionFactory(build);</div><div class="line"><span class="comment">//创建一个新的session对象</span></div><div class="line">session = sessionFactory.openSession();</div><div class="line"></div><div class="line">session = sessionFactory.currentSession();</div></pre></td></tr></table></figure>
+<hr>
+<p><strong>Query类：通过Query对象，可以使用类似SQL语法的HQL来执行常规的数据库操作</strong></p>
+<ol>
+<li><p>获取Query对象</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Query query = session.createQuery(String HQL);</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行查询 query.list();</p>
+<ol>
+<li><p>如果HQL语句中需要有变量，可以用 “?”    或者 命名参数</p>
+<ol>
+<li>“?” 替代的方法，与java.sql.PreparedStatement的 “?” 用法类似，<strong>注意：query.set(index, value)的index（下标）是从 0 开始</strong><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//sql语句</span></div><div class="line"></div><div class="line">String sql = <span class="string">"Select * from Emp where eno = ? and sal = ?"</span>;</div><div class="line"><span class="comment">//PreparedStatement的set方法示例：</span></div><div class="line">ps.set(<span class="number">1</span>, XXX);</div><div class="line"></div><div class="line">ps.set(<span class="number">2</span>, XXX);</div><div class="line"></div><div class="line"><span class="comment">//hibernate.Query的set方法示例:</span></div><div class="line"></div><div class="line">query.setString(<span class="number">0</span>, XXX);</div><div class="line"></div><div class="line">query.setInteger(<span class="number">1</span>, XXX);</div><div class="line"></div><div class="line"><span class="comment">//Query的命名参数方法</span></div><div class="line">      String sql =<span class="string">"select * from Emp where eno = :eno and sal = :sal"</span>;</div><div class="line">      <span class="comment">//省略几步</span></div><div class="line">      <span class="comment">//1. 可以用query.setString()/query.setXXX()方法</span></div><div class="line">      query.setString(<span class="string">"eno"</span>,XXX);</div><div class="line">      query.setInteger(<span class="string">"sal"</span>,XXX);</div><div class="line">      <span class="comment">//2. 可以用query.setparameter()方法</span></div><div class="line">      query.setParameter(<span class="string">"eno"</span>,XXX,String.Class);</div><div class="line">      query.setParameter(<span class="string">"sal"</span>,XXX,<span class="keyword">int</span>.Class);</div><div class="line">      ...</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2.执行删改     query.executeUpdate();</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>3.<strong>分页</strong></p>
+<blockquote>
+<ul>
+<li>query.setFirstResult(int a);<br>设置开始的行数</li>
+<li>query.setMaxResults(int b);<br>设置查询的行数<br>以上两个设置相当于从a开始往后b行</li>
+</ul>
+</blockquote>
+<hr>
+<p>####hibernate关联关系</p>
+<ol>
+<li><p><strong>One To One (一对一)</strong></p>
+<ul>
+<li>单向<blockquote>
+<p>例如学生 Student 和学生证 StudentId 的关系</p>
+</blockquote>
+</li>
+<li>双向</li>
+</ul>
+</li>
+<li><p><strong>Many To One (多对一)</strong></p>
+<blockquote>
+<p>用来给指定列生成外键约束,外键连接到指定类的映射主键(就是id属性)</p>
+</blockquote>
+</li>
+<li><p><strong>One To Many</strong></p>
+</li>
+<li><strong>Many To Many</strong><br>例如有student和teacher两个类<br>student.hbm.xml配置如下：<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">hibernate-mapping</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"hibernate.ManyToMany.Student"</span> <span class="attr">table</span>=<span class="string">"Student"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">id</span> <span class="attr">name</span>=<span class="string">"sid"</span> <span class="attr">column</span>=<span class="string">"sid"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"native"</span>&gt;</span><span class="tag">&lt;/<span class="name">generator</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"name"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 注意指定中间表表名  --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"teachers"</span> <span class="attr">table</span>=<span class="string">"Teacher_students"</span> <span class="attr">cascade</span>=<span class="string">"save-update"</span> <span class="attr">lazy</span>=<span class="string">"extra"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"sid"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">many-to-many</span> <span class="attr">column</span>=<span class="string">"tid"</span> <span class="attr">class</span>=<span class="string">"hibernate.ManyToMany.Teacher"</span> &gt;</span><span class="tag">&lt;/<span class="name">many-to-many</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">set</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">hibernate-mapping</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>teacher.hbm.xml配置如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">hibernate-mapping</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">class</span>	<span class="attr">name</span>=<span class="string">"hibernate.ManyToMany.Teacher"</span> <span class="attr">table</span>=<span class="string">"Teacher"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">id</span> <span class="attr">name</span>=<span class="string">"tid"</span> <span class="attr">column</span>=<span class="string">"tid"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"native"</span>&gt;</span><span class="tag">&lt;/<span class="name">generator</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"name"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!-- 注意指定中间表表名  --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"students"</span> <span class="attr">table</span>=<span class="string">"Teacher_students"</span>  <span class="attr">inverse</span>=<span class="string">"true"</span> <span class="attr">lazy</span>=<span class="string">"extra"</span> &gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"tid"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">many-to-many</span> <span class="attr">column</span>=<span class="string">"sid"</span> <span class="attr">class</span>=<span class="string">"hibernate.ManyToMany.Student"</span>&gt;</span><span class="tag">&lt;/<span class="name">many-to-many</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">set</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">hibernate-mapping</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<hr>
+<p>####SchemaExport类</p>
+<blockquote>
+<p>:给定一个连接字符串和映射文件，不需输入其他东西就可以按照持久化类和映射文件自动生成数据库架构</p>
+</blockquote>
+<ol>
+<li>public void create(boolean script, boolean export)<blockquote>
+<p>script - print the DDL to the console   (是否打印ddl语句)<br> export - export the script to the database (是否在数据库执行语句)</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<p>####java.util.Calendar 日历类(抽象类)  </p>
+<ol>
+<li><p>静态属性s</p>
+<ul>
+<li><p>YEAR,MONTH,DATE…指的是字段数字值</p>
+</li>
+<li><p>获取字段值 get(int field) field:可以是 YEAR,MONTH… 等属性，也可以是 int 类型的字段数字值</p>
+</li>
+</ul>
+</li>
+<li><p>获取实例</p>
+<ul>
+<li>Calendar.getInstance();  //使用默认时区和语言环境获得一个日历</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>####关于java中几种特殊的注释 (可以被eclipse检测到,在task视图中可查看)</p>
+<ol>
+<li><p>TODO：说明在标识处有功能代码待编写，待实现的功能在说明中会简略说明。</p>
+</li>
+<li><p>FIXME：说明标识处代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明。</p>
+</li>
+<li><p>XXX：说明标识处代码虽然实现了功能，但是实现的方法有待商榷，希望将来能改进，要改进的地方会在说明中简略说明。</p>
+</li>
+</ol>
+<hr>
+<p>  ####<strong>Maven<a href="http://maven.apache.org/download.html&quot;Maven下载&quot;" target="_blank" rel="external">点击下载</a></strong>  </p>
+<ol>
+<li><p>环境变量配置</p>
+<blockquote>
+<p>maven_home=maven解压后的根目录<br>path中添加 %maven_home%\bin<br>配置完成后 cmd 输入 mvn -v 测试是否成功</p>
+</blockquote>
+<p>Maven<a href="http://search.maven.org/#browse&quot;http://search.maven.org/#browse&quot;" target="_blank" rel="external">中央仓库</a>地址:<a href="http://search.maven.org/#browse" target="_blank" rel="external">http://search.maven.org/#browse</a></p>
+</li>
+</ol>
+<hr>
+<p>  ####<strong>Ant</strong></p>
+<hr>
+<hr>
+<pre><code>query对象使用,HQL语句执行
+manytoone关系(多对一)
+onetomany关系(一对多)  
+hibernate改写dao包
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-title - android" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/17/title - android/" class="article-date">
+  	<time datetime="2017-02-17T06:01:19.095Z" itemprop="datePublished">2017-02-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/17/title - android/">
+        android
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="android"><a href="#android" class="headerlink" title="android"></a>android</h1><p>R.java文件<br>自动生成的，当前项目 res 文件夹下的所有资源的唯一标识符。<br>通过该唯一标识可以访问到对应的资源。<br>Activity 中访问：R.xx.xx<br>Xml 中访问：@xx/xx</p>
+<p><a href="http://www.cnblogs.com/alpha-bowen/archive/2011/03/02/1969343.html" target="_blank" rel="external">android:layout_weight详解</a></p>
+<blockquote>
+<ol>
+<li>layout_weight表示LinearLayout中额外空间的划分(可能扩大应用layout_weight前的大小也可能缩小)。</li>
+<li>按比例(layout_weight大小的比例).比如有两个控件设置了layout_weight, A 设置 layout_weight = 1; B 设置 layout_weight = 2 ;则 A占空间的1/3，B占空间的1/3.</li>
+</ol>
+</blockquote>
+<p>adb.exe连接手机<br>adb install 安装包所在目录   —安装apk<br>adb uninstall 软件安装的package名称()        —卸载apk</p>
+<p>sqlite<br>android 持久化数据</p>
+<ol>
+<li>文件存储</li>
+<li></li>
+<li>数据库存储</li>
+</ol>
+<p>####文件存储<br>可通过 Context 类的 openFileOutput(String filename, int mode) 方法获取一个java的 FileOutputStream（文件输出流）来存储数据到指定的文件中。<br>参数：</p>
+<ol>
+<li>filename : 文件名，把需要持久化的数据存储到该文件中，此处的文件名不能包含路径，因为所有的文件都默认存储在/data/data/包名/files/ 目录下。</li>
+<li>mode : 模式。这个参数用来指定持久化数据的模式。有两种模式可选：<br>MODE_PRIVATE（默认） ： 如果文件名已存在则覆盖原先的内容；<br>MODE_APPEND ： 文件存在则在文件最后添加保存的数据。</li>
+</ol>
+<p>返回：<br>    FileOutputStream : java 的 IO流对象  获得它就可以为所欲为了，可以转成我们需要的 IO 对象</p>
+<hr>
+<p>####Sqlite数据库存储<br>安卓内嵌了sqlite数据库，使一些复杂的数据存储能简单的完成；同时android框架提供了一个数据库帮助类 SQLiteOpenHelper ，用来对数据库进行创建和升级</p>
+<hr>
+<p>android 布局属性</p>
+<p>android:ellipsize;文本超出的缩略格式</p>
+<p>RadioGroup 和 Dialog</p>
+<hr>
+<p>####自定义控件<br>.自定义控件编写流程<br>创建一个默认就能获取焦点的TextView<br>1.创建一个类继承至TextView,FocusTextView<br>2.重写其构造方法<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//使用在通过java代码创建控件</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="title">FocusTextView</span><span class="params">(Context context)</span> </span>&#123;</div><div class="line">	<span class="keyword">super</span>(context);</div><div class="line">&#125;</div><div class="line"><span class="comment">//由系统调用(带属性+上下文环境构造方法)</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="title">FocusTextView</span><span class="params">(Context context, AttributeSet attrs)</span> </span>&#123;</div><div class="line">	<span class="keyword">super</span>(context, attrs);</div><div class="line">&#125;</div><div class="line"><span class="comment">//由系统调用(带属性+上下文环境构造方法+布局文件中定义样式文件构造方法)</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="title">FocusTextView</span><span class="params">(Context context, AttributeSet attrs, <span class="keyword">int</span> defStyle)</span> </span>&#123;</div><div class="line">	<span class="keyword">super</span>(context, attrs, defStyle);</div><div class="line">&#125;</div><div class="line"><span class="number">3</span>.将原有TextView上的isFocus方法默认修改为,能够获取焦点</div><div class="line"><span class="comment">//重写获取焦点的方法,由系统调用,调用的时候默认就能获取焦点</span></div><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFocused</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>4.使用过程<br>获取当前类的全路径名称,作为xml中的标签存在,其余属性的使用方式和TextView一致</p>
+<hr>
+<p>android 多线程和异步消息<br>anr: application not responseding 应用未响应</p>
+<p>####自定义属性<br>参考系统自带属性定义:\sdk\platforms\android-19\data\res\values\attrs.xml<br>规则：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">declare-styleable</span> <span class="attr">name</span>=<span class="string">"自定义控件的全类名"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"属性名"</span> <span class="attr">format</span>=<span class="string">"格式"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">declare-styleable</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>例如:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">declare-styleable</span> <span class="attr">name</span>=<span class="string">"包明+类名"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"destitle"</span> <span class="attr">format</span>=<span class="string">"string"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"desoff"</span> <span class="attr">format</span>=<span class="string">"string"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">"deson"</span> <span class="attr">format</span>=<span class="string">"string"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">declare-styleable</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>使用自定义属性:<br> 定义命名空间:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- xmlns:xx="http://schemas.android.com/apk/res/程序包名" --&gt;</span></div><div class="line"><span class="comment">&lt;!-- 程序包明=Manifast.xml中package属性指定的包名，注意：不是控件所在的包名 --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">com.sj.view.SettingItemView</span></span></div><div class="line">        <span class="attr">xmlns:sj</span>=<span class="string">"http://schemas.android.com/apk/res/com.sj.view"</span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/siv_update"</span></div><div class="line">        <span class="attr">sj:destitle</span>=<span class="string">"自动更新设置"</span></div><div class="line">        <span class="attr">sj:desoff</span>=<span class="string">"自动更新已关闭"</span></div><div class="line">        <span class="attr">sj:deson</span>=<span class="string">"自动更新已开启"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span> &gt;</div><div class="line">    <span class="tag">&lt;/<span class="name">com.sj.view.SettingItemView</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p> 获取自定义属性值:</p>
+<hr>
+<p>###android handler类的使用和一些问题</p>
+<ol>
+<li>使用</li>
+<li>handler类的内存泄漏问题<br>示例代码如下：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HandlerActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Handler mHandler = <span class="keyword">new</span> Handler() &#123;</div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;</div><div class="line">            <span class="comment">// ...</span></div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        mHandler.sendMessageDelayed(Message.obtain(), <span class="number">60000</span>);</div><div class="line"></div><div class="line">        <span class="comment">//just finish this activity</span></div><div class="line">        finish();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<ol>
+<li>什么是内存泄漏？<blockquote>
+<p> 在计算机科学中，内存泄漏指由于疏忽或错误造成程序未能释放已经不再使用的内存。 内存泄漏并非指内存在物理上的消失，而是应用程序分配某段内存后，由于设计错误，导致在释放该段内存之前就失去了对该段内存的控制，从而造成了内存的浪费。</p>
+</blockquote>
+</li>
+<li>handler类的内存泄漏？<blockquote>
+<p>首先需要了解java的垃圾回收机制.java中内存的回收是由GC(Garbage Collection)来完成的。GC通过确定对象是否被活动对象引用来确定是否收集该对象。也就是说，一个对象不被任何引用所指向，则该对象会在被GC发现的时候被回收；另外，如果一组对象中只包含互相的引用，而没有来自它们外部的引用（例如有两个对象A和B互相持有引用，但没有任何外部对象持有指向A或B的引用），同样会被GC回收<br>顺手copy:<strong>在Java 中，非静态的内部类和匿名内部类都会隐式地持有其外部类的引用，静态的内部类不会持有外部类的引用。</strong></p>
+</blockquote>
+</li>
+<li>为什么会出现这样的问题？<blockquote>
+<p>Handler和Activity的生命周期不同：</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>当<code>Android</code>应用启动的时候，会先创建一个应用主线程的<code>Looper</code>对象，<code>Looper</code>实现了一个简单的消息队列，一个一个的处理里面的<code>Message</code>对象。主线程<code>Looper</code>对象在整个应用生命周期中存在。<br>当在主线程中初始化<code>Handler</code>时，该<code>Handler</code>和<code>Looper</code>的消息队列关联。发送到消息队列的<code>Message</code>会引用发送该消息的<code>Handler</code>对象，这样系统可以调用 <code>Handler#handleMessage(Message)</code>来分发处理该消息。</li>
+<li>如果外部类是Activity，则会引起Activity泄露 。<br>当Activity finish后，延时消息会继续存在主线程消息队列中，然后处理消息。而该消息引用了Activity的Handler对象，然后这个Handler又引用了这个Activity。这些引用对象会保持到该消息被处理完，这样就导致该Activity对象无法被回收，从而导致了上面说的 Activity泄露。<br><code>ps:延时消息(线程中使用Handler#sendMessageDelayed(Message msg:消息, long delayMillis：延迟毫秒数)</code>)</li>
+</ul>
+<ol>
+<li>如何避免以上问题？<blockquote>
+<p>根据GC的工作原理，只需将需要回收的对象的引用关系切断即可被回收。<br><code>Handler</code>与线程是关联的（包括主线程）。<br>所以：<br><strong>方法一</strong>：可以使用逻辑维护切断引用关系。<br>1.在关闭<code>Activity</code>的时候停掉你的后台线程。线程停掉了，就相当于切断了<code>Handler</code>和外部连接的线，<code>Activity</code>自然会在合适的时候被回收。<br>2.如果你的<code>Handler</code>是被<code>delay（延迟）</code>的<code>Message</code>持有了引用，那么使用相应的<code>Handler</code>的<code>removeCallbacks()</code>方法，把消息对象从消息队列移除就行了<br><strong>方法二</strong>：将<code>Handler</code>设置为静态内部类或者外部类。使用弱引用(<code>WeakReference</code>)</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<p>修改后的代码如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HandlerActivity2</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MESSAGE_1 = <span class="number">1</span>;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MESSAGE_2 = <span class="number">2</span>;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MESSAGE_3 = <span class="number">3</span>;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Handler mHandler = <span class="keyword">new</span> MyHandler(<span class="keyword">this</span>);</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        mHandler.sendMessageDelayed(Message.obtain(), <span class="number">60000</span>);</div><div class="line"></div><div class="line">        <span class="comment">// just finish this activity</span></div><div class="line">        finish();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">todo</span><span class="params">()</span> </span>&#123;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">MyHandler</span> <span class="keyword">extends</span> <span class="title">Handler</span> </span>&#123;</div><div class="line">        <span class="keyword">private</span> <span class="keyword">final</span> WeakReference&lt;HandlerActivity2&gt; mActivity;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="title">MyHandler</span><span class="params">(HandlerActivity2 activity)</span> </span>&#123;</div><div class="line">            mActivity = <span class="keyword">new</span> WeakReference&lt;HandlerActivity2&gt;(activity);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;</div><div class="line">            System.out.println(msg);</div><div class="line">            <span class="keyword">if</span> (mActivity.get() == <span class="keyword">null</span>) &#123;</div><div class="line">                <span class="keyword">return</span>;</div><div class="line">            &#125;</div><div class="line">            mActivity.get().todo();</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<ol>
+<li>弱引用(<code>WeakReference</code>)</li>
+</ol>
+<hr>
+<p>HttpURLConnection 类</p>
+<hr>
+<p><strong>android中联网操作，数据库读取等耗时操作一定要新建一个线程执行。</strong></p>
+<hr>
+<p>###OkHttp</p>
+<p>http协议<br><strong>请求:</strong></p>
+<pre><code>1. 请求头(requestHeader)
+构建请求头：
+
+2. 请求体 (requestbody)
+构建请求体：
+</code></pre><p>get方式提交:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">OkHttpClient okHttpClient = <span class="keyword">new</span> OkHttpClient();</div><div class="line"><span class="comment">//构建请求对象</span></div><div class="line">Request.Builder builder = <span class="keyword">new</span> Request.Builder();</div><div class="line">builder.get().url(<span class="string">"url地址"</span>).build();</div><div class="line"><span class="comment">//根据请求对象构建一个连接对象</span></div><div class="line">Call call = okHttpClient.newCall(request);</div><div class="line"><span class="comment">//异步队列执行</span></div><div class="line">call.enqueue(<span class="keyword">new</span> Callback()&#123;</div><div class="line">    <span class="comment">//Callback 需实现两个方法  </span></div><div class="line">    <span class="comment">//onFailure  失败时执行的方法</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onFailure</span><span class="params">(Request request,IOException e)</span></span>&#123;&#125;</div><div class="line">    <span class="comment">//onResponse  成功时执行的方法</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onResponse</span><span class="params">(Response response)</span> throw IOException</span>&#123;&#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>post方式提交：MultipartBody类<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//MultipartBody通过setType可设置为任何提交形式，如下就是表单</span></div><div class="line">MultipartBody requestBody = <span class="keyword">new</span> MultipartBody.Builder()</div><div class="line">			.setType(MultipartBody.FORM)</div><div class="line">			.addFormDataPart(<span class="string">"userName"</span>, <span class="string">"abcdef"</span>)</div><div class="line">			.addFormDataPart(<span class="string">"passWord"</span>, <span class="string">"123"</span>).build();</div><div class="line">			</div><div class="line"><span class="comment">//也可以这样			</span></div><div class="line">RequestBody formBody = <span class="keyword">new</span> FormBody.Builder()</div><div class="line">        .add(<span class="string">"userName"</span>, <span class="string">"abcdef"</span>)</div><div class="line">        .build();</div></pre></td></tr></table></figure></p>
+<p>post提交File<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"> File file = <span class="keyword">new</span> File(<span class="string">"README.md"</span>);</div><div class="line"><span class="comment">//首先构造一个请求类</span></div><div class="line">   Request request = <span class="keyword">new</span> Request.Builder()</div><div class="line">       .url(<span class="string">"https://api.github.com/markdown/raw"</span>)</div><div class="line">       .post(RequestBody.create(MEDIA_TYPE_MARKDOWN, file)) <span class="comment">//MEDIA_TYPE_MARKDOWN = file的mime类型</span></div><div class="line">       .build();</div><div class="line"> <span class="comment">//然后构造一个连接类</span></div><div class="line">Response response = okhttpClient.newCall(request).enqueue(<span class="keyword">new</span> Callback()&#123;</div><div class="line">   ...</div><div class="line"> &#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>响应:</strong></p>
+<pre><code>1. 响应头（responseHeader）
+2. 响应体（responseBody）
+</code></pre><hr>
+<p>###Fragment<br>生命周期及回调方法:</p>
+<blockquote>
+<ol>
+<li>onAttach()<br>当碎片和活动建立关联的时候调用。</li>
+<li>onCreateView()<br>为碎片创建视图（加载布局）时调用。</li>
+<li>onActivityCreated()<br>确保与碎片相关联的活动一定已经创建完毕的时候调用。</li>
+<li>onDestroyView()<br>当与碎片关联的视图被移除的时候调用。</li>
+<li>onDetach()<br>当碎片和活动解除关联的时候调用。</li>
+</ol>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20130828141916656" alt="fragment生命周期图"></p>
+<p>  其他方法：<br>  &gt;</p>
+<ol>
+<li><code>getActivity()</code>:返回与当前fragment关联的activity,返回Context类型</li>
+<li>activity 中获取fragment:<br>getFragmentManager()<code>.findFragmentById(int id)</code>/<code>.findFragmentByTag(String tag)</code> , 返回Fragment类型</li>
+<li>fragment之间通信以及fragment与activity通信:<br>fragment可以获取到与其关联的activity对象，（<code>getActivity()</code>）<br>获取到activity 对象实例后就可以调用activity里的方法了。<br>同时，通过activity对象实例也可以获取到与其关联的fragment对象(<code>getFragmentManager().findViewById()</code>)。<br>如果要获取到fragment里的控件，首先需要获取到fragment的视图（View对象），<code>【Fragment对象】.getView()</code>,返回View类型。<br>然后就可以用 <code>【View】.findViewById(int id)</code>获取fragment里的控件了。</li>
+</ol>
+<hr>
+<p>###ProgressBar<br>常用方法<br>setProgress(int i);设置第一进度<br>getProgress();获取第一进度<br>setSecondaryProgress(int i)设置第二进度<br>getSecondaryProgress()获取第二进度<br>getMax();获取最大值<br>setMax();设置最大值</p>
+<hr>
+<p>###ORMLite</p>
+<hr>
+<p>####android调用系统界面安装apk<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**安装apk,使用隐式Intent调用系统界面</span></div><div class="line">	 * <span class="doctag">@param</span> file ： apk文件</div><div class="line">	 * */</div><div class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">installApk</span><span class="params">(File file)</span> </span>&#123;</div><div class="line">		Intent intent = <span class="keyword">new</span> Intent(Intent.ACTION_VIEW);</div><div class="line">		intent.addCategory(Intent.CATEGORY_DEFAULT);</div><div class="line">		<span class="comment">//设置数据源</span></div><div class="line">		<span class="comment">//设置类型</span></div><div class="line">		intent.setDataAndType(Uri.fromFile(file),<span class="string">"application/vnd.android.package-archive"</span>);</div><div class="line">		startActivity(intent);</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<p>####事件传递<br>事件从父元素到子元素传递，子元素能响应则子元素响应，否则为父元素响应<br>1-2-3-2-1</p>
+<hr>
+<p>####SharedPreferences</p>
+<ul>
+<li><p>Android平台给我们提供的一个轻量级应用程序内部轻量级的存储方案,特别适合用于保存软件配置参数,比如boolean,int,float,long,String等数据.使用SharedPreferences保存数据,其实质是采用了xml文件存放数据,路径为:/data/data/<package name="">/shared_prefs.</package></p>
+</li>
+<li><p>获取SharedPreferences的两种方式:</p>
+</li>
+</ul>
+<ol>
+<li>调用Context对象的getSharedPreferences()方法</li>
+<li>调用Activity对象的getPreferences()方法</li>
+</ol>
+<ul>
+<li>两种方式的区别:</li>
+</ul>
+<ol>
+<li>调用Context对象的getSharedPreferences()方法获得的SharedPreferences对象可以被同一应用程序下的其他组件共享.</li>
+<li>调用Activity对象的getPreferences()方法获得的SharedPreferences对象只能在该Activity中使</li>
+</ol>
+<ul>
+<li>SharedPreferences的操作模式:</li>
+</ul>
+<ol>
+<li>Context.MODE_PRIVATE：为默认操作模式,代表该文件是私有数据,只能被应用本身访问,在该模式下,写入的内容会覆盖原文件的内容</li>
+<li>Context.MODE_APPEND：模式会检查文件是否存在,存在就往文件追加内容,否则就创建新文件.</li>
+<li>Context.MODE_WORLD_READABLE和Context.MODE_WORLD_WRITEABLE用来控制其他应用是否有权限读写该文件.</li>
+<li>MODE_WORLD_READABLE：表示当前文件可以被其他应用读取.</li>
+<li>MODE_WORLD_WRITEABLE：表示当前文件可以被其他应用写入.</li>
+</ol>
+<ul>
+<li>示例<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">将数据保存至SharedPreferences:</div><div class="line">SharedPreferences preferences=getSharedPreferences(<span class="string">"user"</span>,Context.MODE_PRIVATE);</div><div class="line">Editor editor=preferences.edit();</div><div class="line">String name=<span class="string">"xixi"</span>;</div><div class="line">String age=<span class="string">"22"</span>;</div><div class="line">editor.putString(<span class="string">"name"</span>, name);</div><div class="line">editor.putString(<span class="string">"age"</span>, age);</div><div class="line">editor.commit();</div><div class="line"> </div><div class="line">从SharedPreferences获取数据:</div><div class="line">SharedPreferences preferences=getSharedPreferences(<span class="string">"user"</span>, Context.MODE_PRIVATE);</div><div class="line">String name=preferences.getString(<span class="string">"name"</span>, <span class="string">"defaultname"</span>);</div><div class="line">String age=preferences.getString(<span class="string">"age"</span>, <span class="string">"0"</span>);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<p>####监听广播</p>
+<hr>
+<p>####服务</p>
+<hr>
+<p>####OnCLick事件和OnTouch事件<br>发生时机:手指点击view,触发顺序:Touch的ACTION_DOWN -&gt; Touch的ACTION_UP -&gt;OnClick/OnLongClick。<br>响应说明:</p>
+<pre><code>&gt; 
+</code></pre><p>首先，该View会先响应<code>ACTION_DOWN</code>事件，并返回一个<code>boolean值</code>，这里有两种判断：<br>a：<code>返回True</code>，表示该View<code>接受</code>此按下动作，就是说这个点击动作的按下操作被中止，然后就是响应<code>ACTION_UP</code>事件。点击动作的按下操作被<code>ACTION_DOWN</code>接受之后就结束了，所以之后的<code>OnClick/OnLongClick</code>事件就不会响应了。<br>b：<code>返回false</code>，表示该<code>View不接受</code>此按下动作，响应完之后，按下操作继续往下发，之后是响应<code>ACTION_UP</code>事件，这里又有一个判断：<br>如果ACTION_UP事件返回True，表示ACTION_UP接受松开操作，松开操作中止；View会一直处于按下状态，之后View便会响应OnLongClick事件。<br>如果ACTION_UP事件返回false，表示ACTION_UP不接收松开操作，松开操作继续下发；因为按下与松开操作都没有被中止，所以之后View就会响应OnClick事件。</p>
+<p>一个Onclick事件和OnTouch事件案例:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * Created by Administrator on 2016/12/30.</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ToastLocationActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> ImageView iv_drag;</div><div class="line">    <span class="keyword">private</span> Button btn_top, btn_bottom;</div><div class="line">    <span class="keyword">private</span> WindowManager mWM;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span> mScreenWidth, mScreenHeight;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">long</span>[] click_time_stamp = <span class="keyword">new</span> <span class="keyword">long</span>[<span class="number">2</span>]; <span class="comment">//设置一个数组   装载点击的时间戳</span></div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_toast_location);</div><div class="line">        initUI();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onResume</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onResume();</div><div class="line">        <span class="comment">//显示控件的出事位置   之前保存</span></div><div class="line">        <span class="keyword">int</span> location_x = SpUtil.getInt(getApplicationContext(), ConstantValue.LOCATION_X, <span class="number">0</span>);</div><div class="line">        <span class="keyword">int</span> location_y = SpUtil.getInt(getApplicationContext(), ConstantValue.LOCATION_Y, <span class="number">0</span>);</div><div class="line">        Log.i(TAG, <span class="string">"initUI: "</span> + location_x + location_y);</div><div class="line">        RelativeLayout.LayoutParams layoutParams = <span class="keyword">new</span> RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);</div><div class="line">        layoutParams.leftMargin = location_x;</div><div class="line">        layoutParams.topMargin = location_y;</div><div class="line">        iv_drag.setLayoutParams(layoutParams);</div><div class="line">        <span class="comment">//初始显示时判断控件位于屏幕哪部分</span></div><div class="line">        <span class="keyword">if</span> (location_y &gt; mScreenHeight / <span class="number">2</span>) &#123;</div><div class="line">            btn_bottom.setVisibility(View.INVISIBLE);</div><div class="line">            btn_top.setVisibility(View.VISIBLE);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            btn_bottom.setVisibility(View.VISIBLE);</div><div class="line">            btn_top.setVisibility(View.INVISIBLE);</div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">initUI</span><span class="params">()</span> </span>&#123;</div><div class="line">        iv_drag = (ImageView) findViewById(R.id.iv_drag);</div><div class="line">        btn_top = (Button) findViewById(R.id.btn_top);</div><div class="line">        btn_bottom = (Button) findViewById(R.id.btn_bottom);</div><div class="line">        mWM = (WindowManager) getSystemService(WINDOW_SERVICE);</div><div class="line">        mScreenWidth = mWM.getDefaultDisplay().getWidth();</div><div class="line">        mScreenHeight = mWM.getDefaultDisplay().getHeight();</div><div class="line"></div><div class="line">        <span class="comment">//双击居中 iv_drag</span></div><div class="line">        <span class="comment">//制定双击事件规则</span></div><div class="line">        iv_drag.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</div><div class="line"></div><div class="line"></div><div class="line">                <span class="comment">/* src - 源数组</span></div><div class="line">                 srcPos - 源数组下标</div><div class="line">                 dst - 目标数组</div><div class="line">                 dstPos - 目标数组下标</div><div class="line">                 length - 复制的元素数量</div><div class="line"></div><div class="line">                 该方法实现了   从源数组 src 的 指定下标 srcpos 开始,拷贝指定数量 length 的元素 到目标数组 dst 中，从指定下标 dstpos 开始</div><div class="line">                 实现双击：设置数组长度为2，设置点击间隔即可</div><div class="line">                 多击事件同理。</div><div class="line">                  */</div><div class="line">                System.arraycopy(click_time_stamp,<span class="number">1</span>,click_time_stamp,<span class="number">0</span>,click_time_stamp.length-<span class="number">1</span>);</div><div class="line">                <span class="comment">//获取点击的当前时间戳</span></div><div class="line">                <span class="keyword">long</span> current_time = SystemClock.uptimeMillis();</div><div class="line">                <span class="comment">//把当前点击的时间戳赋值给数组的最后一位</span></div><div class="line">                click_time_stamp[click_time_stamp.length-<span class="number">1</span>] = current_time;</div><div class="line"></div><div class="line">                Log.i(TAG, <span class="string">"onClick: 点击了按钮:"</span>+current_time);</div><div class="line">                <span class="comment">//设置从第一次点击到最后N次点击的时间间隔，  满足则触发事件</span></div><div class="line">                Log.i(TAG, <span class="string">"onClick: 差时"</span>+(click_time_stamp[click_time_stamp.length-<span class="number">1</span>] - click_time_stamp[<span class="number">0</span>]));</div><div class="line">                <span class="keyword">if</span>(click_time_stamp[click_time_stamp.length-<span class="number">1</span>] - click_time_stamp[<span class="number">0</span>] &lt;= <span class="number">300</span>)&#123;</div><div class="line">                    Log.i(TAG, <span class="string">"onClick: 响应了双击"</span>);</div><div class="line">                    RelativeLayout.LayoutParams layoutParams = <span class="keyword">new</span> RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);</div><div class="line">                    layoutParams.leftMargin = mScreenWidth/<span class="number">2</span>-<span class="number">30</span>; <span class="comment">//减30  以左上角为原点</span></div><div class="line">                    layoutParams.topMargin = mScreenHeight/<span class="number">2</span>;</div><div class="line">                    iv_drag.setLayoutParams(layoutParams);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line"></div><div class="line">        <span class="comment">//监听拖拽</span></div><div class="line">        iv_drag.setOnTouchListener(<span class="keyword">new</span> View.OnTouchListener() &#123;</div><div class="line">            <span class="keyword">int</span> startx, starty, movex, movey, disx, disy, top, left, right, bottom;</div><div class="line"></div><div class="line"></div><div class="line">            <span class="meta">@Override</span></div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onTouch</span><span class="params">(View v, MotionEvent event)</span> </span>&#123;</div><div class="line">                <span class="keyword">switch</span> (event.getAction()) &#123;</div><div class="line">                    <span class="comment">//手指按下</span></div><div class="line">                    <span class="keyword">case</span> MotionEvent.ACTION_DOWN:</div><div class="line">                        <span class="comment">//获取起始位置 x,y</span></div><div class="line">                        startx = (<span class="keyword">int</span>) event.getRawX();</div><div class="line">                        starty = (<span class="keyword">int</span>) event.getRawY();</div><div class="line">                        <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">                    <span class="comment">//移动</span></div><div class="line">                    <span class="keyword">case</span> MotionEvent.ACTION_MOVE:</div><div class="line">                        <span class="comment">//移动后的位置 x,y</span></div><div class="line">                        movex = (<span class="keyword">int</span>) event.getRawX();</div><div class="line">                        movey = (<span class="keyword">int</span>) event.getRawY();</div><div class="line">                        <span class="comment">//移动的位置 x,y</span></div><div class="line">                        disx = movex - startx;</div><div class="line">                        disy = movey - starty;</div><div class="line">                        <span class="comment">//当前控件的位置  x,y</span></div><div class="line">                        top = iv_drag.getTop() + disy;</div><div class="line">                        left = iv_drag.getLeft() + disx;</div><div class="line">                        right = iv_drag.getRight() + disx;</div><div class="line">                        bottom = iv_drag.getBottom() + disy;</div><div class="line"></div><div class="line">                        <span class="comment">//设置控件不能超出屏幕   左上右下</span></div><div class="line">                        <span class="keyword">if</span> (left &lt; <span class="number">0</span>) &#123;</div><div class="line">                            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">                        &#125;</div><div class="line">                        <span class="keyword">if</span> (top &lt; <span class="number">0</span>) &#123;</div><div class="line">                            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">                        &#125;</div><div class="line">                        <span class="keyword">if</span> (right &gt; mScreenWidth) &#123;</div><div class="line">                            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">                        &#125;</div><div class="line">                        <span class="comment">//考虑通知栏  大概即可</span></div><div class="line">                        <span class="keyword">if</span> (bottom &gt; mScreenHeight - <span class="number">22</span>) &#123;</div><div class="line">                            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">                        &#125;</div><div class="line"></div><div class="line">                        <span class="comment">//判断位置是否大于屏幕高度一半   显示文字位置</span></div><div class="line">                        <span class="keyword">if</span> (top &gt; mScreenHeight / <span class="number">2</span>) &#123;</div><div class="line">                            btn_top.setVisibility(View.VISIBLE);</div><div class="line">                            btn_bottom.setVisibility(View.INVISIBLE);</div><div class="line">                        &#125; <span class="keyword">else</span> &#123;</div><div class="line">                            btn_top.setVisibility(View.INVISIBLE);</div><div class="line">                            btn_bottom.setVisibility(View.VISIBLE);</div><div class="line">                        &#125;</div><div class="line"></div><div class="line"></div><div class="line">                        <span class="comment">//设置控件的位置</span></div><div class="line">                        iv_drag.layout(left, top, right, bottom);</div><div class="line">                        <span class="comment">//重置起始坐标</span></div><div class="line">                        startx = (<span class="keyword">int</span>) event.getRawX();</div><div class="line">                        starty = (<span class="keyword">int</span>) event.getRawY();</div><div class="line"></div><div class="line">                        Log.i(TAG, <span class="string">"onTouch: "</span> + disx + disy);</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="comment">//抬起</span></div><div class="line">                    <span class="keyword">case</span> MotionEvent.ACTION_UP:</div><div class="line">                        <span class="comment">//保存坐标位置</span></div><div class="line">                        SpUtil.putInt(getApplicationContext(), ConstantValue.LOCATION_X, iv_drag.getLeft());</div><div class="line">                        SpUtil.putInt(getApplicationContext(), ConstantValue.LOCATION_Y, iv_drag.getTop());</div><div class="line">                        <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">                &#125;</div><div class="line"></div><div class="line">                <span class="comment">//返回false:不响应 ，true:响应</span></div><div class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-title- 内部类简单使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/17/title- 内部类简单使用/" class="article-date">
+  	<time datetime="2017-02-17T06:00:27.541Z" itemprop="datePublished">2017-02-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/17/title- 内部类简单使用/">
+        内部类简单使用
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###内部类简单使用</p>
+<ul>
+<li><strong>成员内部类（Inner-class）</strong><br>作为类的成员存在，可以使用访问修饰符来控制访问权限（private,protected,public）  </li>
+</ul>
+<blockquote>
+<ul>
+<li>成员内部类中不能存在任何static的变量和方法</li>
+<li>成员内部类是依附于外围类的，所以只有先创建了外围类实例才能够创建内部类实例。  </li>
+</ul>
+</blockquote>
+<p>如下就是声明和调用成员内部类的具体代码：  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</div><div class="line">	</div><div class="line">	<span class="comment">//定义 public 内部类 C 可在外包访问</span></div><div class="line">	<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">C</span></span>&#123;</div><div class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">			System.out.println(<span class="string">"RUNNING..."</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">//定义 default 内部类D 可同包访问</span></div><div class="line">	<span class="class"><span class="keyword">class</span> <span class="title">D</span></span>&#123;</div><div class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">			System.out.println(<span class="string">"RUNNING..."</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">//static 修饰符修饰内部类，此时该内部类不依赖外部类，可直接实例化</span></div><div class="line">	<span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">E</span></span>&#123;</div><div class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">			System.out.println(<span class="string">"RUNNING..."</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		C c = <span class="keyword">new</span> Test().new C();</div><div class="line">		D d = <span class="keyword">new</span> Test().new D();</div><div class="line">		E e = <span class="keyword">new</span> E();</div><div class="line">		b.run();</div><div class="line">		c.run();</div><div class="line">		e.run();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li><strong>局部内部类（MethodLocalInnerClass）</strong>  </li>
+</ul>
+<blockquote>
+<ul>
+<li>类似局部变量，有作用范围的内部类  </li>
+<li>局部内部类只能使用 final 和 abstract 两个修饰符</li>
+<li>在局部内部类中可以调用 Outclass(外部类) 定义的常量</li>
+</ul>
+</blockquote>
+<p>下面是定义在方法中的局部内部类示例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">	</div><div class="line">	<span class="keyword">final</span> String str1 = <span class="string">"b"</span>;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testMethod</span><span class="params">()</span></span>&#123;</div><div class="line">	    <span class="comment">//在方法中定义常量 str</span></div><div class="line">    	<span class="keyword">final</span> String str = <span class="string">"a"</span>;</div><div class="line">	    <span class="comment">//在 testMethod 中定义局部内部类 A </span></div><div class="line">	    <span class="comment">// A 只能在 testMethod 中调用</span></div><div class="line">		</div><div class="line">		 <span class="class"><span class="keyword">class</span> <span class="title">A</span></span>&#123;</div><div class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">			    <span class="comment">//在局部内部类中调用常量 str</span></div><div class="line">				System.out.println(<span class="string">"RUNNING...\n"</span>+str+<span class="string">"\n"</span>+str1);</div><div class="line">			&#125;</div><div class="line">		&#125;;</div><div class="line">		<span class="comment">//实例化并调用 A 的 run() 方法</span></div><div class="line">		A a = <span class="keyword">new</span> A();</div><div class="line">		a.run();</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">new</span> Test().testMethod();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>我们可以看到运行结果如下：</p>
+<hr>
+<ul>
+<li><strong>匿名内部类（AnonymousInnerClass）</strong><blockquote>
+<ul>
+<li>没有命名的内部类，一般写在方法或代码块中</li>
+</ul>
+</blockquote>
+</li>
+<li>没有构造器，只能在定义的地方实例化一次</li>
+<li>不能是静态的</li>
+<li>一般在实现/重写类和接口方法时才使用<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//定义一个 Person 接口</span></div><div class="line"><span class="keyword">package</span> AnonymousInnerClass;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Person</span> </span>&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHi</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>以下是匿名内部类的声明和使用：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> AnonymousInnerClass;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">meetEN</span><span class="params">()</span></span>&#123;</div><div class="line">		System.out.println(<span class="string">"遇见英国朋友了，打招呼"</span>);</div><div class="line">		Person p = <span class="keyword">new</span> Person()&#123;</div><div class="line">			<span class="meta">@Override</span></div><div class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHi</span><span class="params">()</span> </span>&#123;</div><div class="line">				System.out.println(<span class="string">"HI"</span>);</div><div class="line">			&#125;</div><div class="line">		&#125;;</div><div class="line">		p.sayHi();</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">meetCH</span><span class="params">()</span></span>&#123;</div><div class="line">		System.out.println(<span class="string">"遇见中国朋友了，打招呼"</span>);</div><div class="line">		Person p = <span class="keyword">new</span> Person()&#123;</div><div class="line">			<span class="meta">@Override</span></div><div class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHi</span><span class="params">()</span> </span>&#123;</div><div class="line">				System.out.println(<span class="string">"你好"</span>);</div><div class="line">			&#125;</div><div class="line">		&#125;;</div><div class="line">		p.sayHi();</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		Test test = <span class="keyword">new</span> Test();</div><div class="line">		test.meetCH();</div><div class="line"><span class="comment">//		test.meetEN();</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-spring mvc验证分组" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/17/spring mvc验证分组/" class="article-date">
+  	<time datetime="2017-02-17T05:59:45.306Z" itemprop="datePublished">2017-02-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/17/spring mvc验证分组/">
+        spring mvc验证分组
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="spring-mvc验证分组"><a href="#spring-mvc验证分组" class="headerlink" title="spring mvc验证分组"></a>spring mvc验证分组</h1><p>标签（空格分隔）： springmvc验证分组</p>
+<hr>
+<p>使用注解方式校验,<br>以下为bean的代码片段。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Entity</span></div><div class="line"><span class="meta">@Table</span>(name = <span class="string">"user1"</span>)</div><div class="line"><span class="meta">@Component</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</div><div class="line">    <span class="meta">@Id</span></div><div class="line">    <span class="meta">@Column</span>(name = <span class="string">"uid1"</span>)</div><div class="line">    <span class="meta">@GeneratedValue</span></div><div class="line">    <span class="keyword">private</span> Integer uId;</div><div class="line">    <span class="meta">@NotEmpty</span>(message = <span class="string">"请输入昵称"</span>, groups = &#123;User.regist.class&#125;)</div><div class="line">    <span class="keyword">private</span> String uName;</div><div class="line">    <span class="meta">@NotEmpty</span>(message = <span class="string">"邮箱不能为空"</span>, groups = &#123;User.login.class,User.regist.class&#125;)</div><div class="line">    <span class="meta">@Email</span>(message = <span class="string">"邮箱格式不正确"</span>, groups = &#123;User.login.class,User.regist.class&#125;)</div><div class="line">    <span class="keyword">private</span> String uEmail;</div><div class="line">    <span class="meta">@NotEmpty</span>(message = <span class="string">"密码不能为空"</span>, groups = &#123;User.login.class,User.regist.class&#125;)</div><div class="line">    <span class="meta">@Length</span>(min = <span class="number">8</span>, max = <span class="number">16</span>, message = <span class="string">"密码长度必须为8-16位"</span>, groups = &#123;User.login.class,User.regist.class&#125;)</div><div class="line">    <span class="keyword">private</span> String uPassword;</div><div class="line">    </div><div class="line">    ...省略get set 等方法</div><div class="line">     <span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">login</span></span>&#123;&#125;;</div><div class="line">     <span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">regist</span></span>&#123;&#125;;</div></pre></td></tr></table></figure></p>
+<p>如上：利用注解中的<code>groups</code>属性为该注解指定分组，我们在该bean中定义了两个内部接口作为分组。两个分组分别为:User.login.class,User.regist.class。</p>
+<p>在controller中验证时，可以为需要验证的bean选择分组注解。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//登录</span></div><div class="line">   <span class="meta">@RequestMapping</span>(value = <span class="string">"/logging"</span>, method = RequestMethod.POST)</div><div class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">login</span><span class="params">(@ModelAttribute(<span class="string">"user"</span>)</span> @<span class="title">Validated</span><span class="params">(User.login.class)</span> User user, BindingResult result, Errors errors, HttpSession session) </span>&#123;</div><div class="line">      此处省略N行代码</div><div class="line">      ...</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="comment">//注册</span></div><div class="line">   <span class="meta">@RequestMapping</span>(value = <span class="string">"/registing"</span>, method = RequestMethod.POST)</div><div class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">regist</span><span class="params">(@ModelAttribute(<span class="string">"user"</span>)</span> @<span class="title">Validated</span><span class="params">(User.regist.class)</span> User user, BindingResult result, @<span class="title">ModelAttribute</span><span class="params">(<span class="string">"uQrpassword"</span>)</span> String uQrpassword) </span>&#123;</div><div class="line">      此处省略N行代码</div><div class="line">      ...</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
+<p>我们需要用到@Validated()注解来为参数添加验证，@Validated(User.login.class)则不仅为参数添加了验证，还指定了验证分组为User.login.class。当指定验证分组groups为 User.login.class 时，验证时只会验证groups属性包含User.login.class的注解。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-spring-mvc" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/17/spring-mvc/" class="article-date">
+  	<time datetime="2017-02-17T05:59:05.025Z" itemprop="datePublished">2017-02-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/17/spring-mvc/">
+        Hello World
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a>SpringMVC</h1><p>标签（空格分隔）： springmvc</p>
+<hr>
+<hr>
+<p>###<strong>数据验证</strong>:</p>
+<ol>
+<li>验证器验证:<br> 自定义验证器:实现<code>Validator</code>接口（org.springframework.validation.Validator）,<br>需实现两个方法:<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestValidator</span> <span class="keyword">implements</span> <span class="title">Validator</span> </span>&#123;</div><div class="line">    <span class="comment">//校验需验证的类</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supports</span><span class="params">(Class&lt;?&gt; clazz)</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> clazz.equals(Peo.class);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">//该方法为验证方法，里面实现验证逻辑以及注册错误信息</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">validate</span><span class="params">(Object target, Errors errors)</span> </span>&#123;</div><div class="line">        Peo peo = (Peo) target;</div><div class="line">        <span class="keyword">if</span>(peo.getName().equals(<span class="string">"zs"</span>))</div><div class="line">            errors.rejectValue(<span class="string">"name"</span>,<span class="keyword">null</span>,<span class="string">"不能为张三或者zs"</span>);</div><div class="line">        <span class="keyword">if</span>(peo.getBirth().after(<span class="keyword">new</span> Date()))</div><div class="line">            errors.rejectValue(<span class="string">"birth"</span>,<span class="keyword">null</span>,<span class="string">"是不是写错了"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>xml配置:（将验证器注册成为全局的）<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"validator"</span> <span class="attr">class</span>=<span class="string">"org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"providerClass"</span>  <span class="attr">value</span>=<span class="string">"org.hibernate.validator.HibernateValidator"</span>/&gt;</span></div><div class="line">        <span class="comment">&lt;!--不设置则默认为classpath下的 ValidationMessages.properties --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"validationMessageSource"</span> <span class="attr">ref</span>=<span class="string">"validatemessageSource"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"conversion-service"</span> <span class="attr">class</span>=<span class="string">"org.springframework.format.support.FormattingConversionServiceFactoryBean"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"validatemessageSource"</span> <span class="attr">class</span>=<span class="string">"org.springframework.context.support.ReloadableResourceBundleMessageSource"</span>&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"basename"</span> <span class="attr">value</span>=<span class="string">"classpath:validatemessages"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"fileEncodings"</span> <span class="attr">value</span>=<span class="string">"utf-8"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"cacheSeconds"</span> <span class="attr">value</span>=<span class="string">"120"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line">```    </div><div class="line">2. 声明式数据验证(JSR-303验证框架):</div><div class="line">    JSR-303:是一个数据验证的规范,2009 年 12 月 Java EE 6 发布,实现的jar包有hibernate-validator等。</div><div class="line">    1. 添加jar包:`Hibernate-validator`。(maven repository 搜索即可)</div><div class="line">    2. spring添加注解映射支持 `<span class="tag">&lt;<span class="name">mvc:annotation-driven</span> <span class="attr">validator</span>=<span class="string">"validator"</span> <span class="attr">conversion-service</span>=<span class="string">"conversion-service"</span> /&gt;</span>`</div><div class="line">    3. 在需要验证的字段前加上注解`@valid`,例如:</div><div class="line">   &gt; @RequestMapping("/d")</div><div class="line">    public String test(@Valid Peo peo, Errors errors)&#123;</div><div class="line">            </div><div class="line">    &#125;</div><div class="line">3. 基本验证:</div><div class="line"></div><div class="line"></div><div class="line">---</div><div class="line">spring 数据回显封装在request中，可以通过jstl等访问得到</div><div class="line"></div><div class="line">**BindingResult必须紧跟在ModelAttribute后面**</div><div class="line">---</div><div class="line">###异常处理</div><div class="line">1. 局部异常处理</div><div class="line">    在controller中定义一个ExceptionHandler(使用@ExceptionHandler注解)</div><div class="line">    可以处理同一个controller中的异常</div><div class="line">可以写一个包含异常处理的controller，然后其他controller都继承该类。</div><div class="line">    ```java</div><div class="line">        @ExceptionHandler</div><div class="line">    public ModelAndView exceptionHandler(Exception e)&#123;</div><div class="line">        ModelAndView mv = new ModelAndView("error");</div><div class="line">        mv.addObject("exception", e);</div><div class="line">        System.out.println("Class:ExceptionTest have error");</div><div class="line">        return mv;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @RequestMapping("/a")</div><div class="line">    @ResponseBody</div><div class="line">    public String a()&#123;</div><div class="line">        //这里故意制造错误</div><div class="line">        int a = 5/0;</div><div class="line">        return "this is function:a";</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<ol>
+<li><p>全局异常处理，使用@ControllerAdvice注解</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@ControllerAdvice</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ExHandler</span> </span>&#123;</div><div class="line">    <span class="meta">@ExceptionHandler</span></div><div class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">exceptionHandler</span><span class="params">(Exception ex)</span> </span>&#123;</div><div class="line">        ModelAndView mv = <span class="keyword">new</span> ModelAndView(<span class="string">"error"</span>);</div><div class="line">        mv.addObject(<span class="string">"exception"</span>, ex);</div><div class="line">        System.out.println(<span class="string">"in testControllerAdvice"</span>);</div><div class="line">        <span class="keyword">return</span> mv;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>全局异常处理（xml配置）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- configure SimpleMappingExceptionResolver --&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"exceptionMappings"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">props</span>&gt;</span></div><div class="line">         <span class="comment">&lt;!-- 指定错误页面 --&gt;</span></div><div class="line">             <span class="tag">&lt;<span class="name">prop</span> <span class="attr">key</span>=<span class="string">"java.lang.ArithmeticException"</span>&gt;</span>error<span class="tag">&lt;/<span class="name">prop</span>&gt;</span></div><div class="line">         <span class="tag">&lt;/<span class="name">props</span>&gt;</span></div><div class="line">     <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"> <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<p>###<strong>拦截器</strong><br>自定义拦截器，实现HandlerInterceptor,WebRequestInteceptor接口或继承他的实现类.</p>
+<ul>
+<li>HandlerInterceptor 参数比较多，能够更全面控制拦截行为</li>
+<li>WebRequestInterceptor 针对 Web               请求精简了参数列表，主要用来控制 request/ModelAndView/Exception<br><img src="http://img.mukewang.com/55d2ceaa00014a3907050472.png" alt="拦截器方法执行顺序"></li>
+</ul>
+<p><strong>实现HandlerInterceptor的拦截器栗子:</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyTestInterceptor</span> <span class="keyword">implements</span> <span class="title">HandlerInterceptor</span></span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">//该方法将在请求处理之前进行调用</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">preHandle</span><span class="params">(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        Calendar date = GregorianCalendar.getInstance();</div><div class="line">        System.out.println(<span class="string">"MyTestInterceptor.preHandle+date.getHour=="</span>+date.get(Calendar.HOUR));</div><div class="line">        <span class="keyword">if</span>(date.get(Calendar.HOUR) &gt;= <span class="number">11</span>)</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//在当前所属的Interceptor 的preHandle 方法的返回值为true 时才能被调用</span></div><div class="line">    <span class="comment">//在当前请求进行处理之后，也就是Controller 方法调用之后执行，但是它会在DispatcherServlet 进行视图返回渲染之前被调用，所以我们可以在这个方法中对Controller 处理之后的ModelAndView 对象进行操作。</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postHandle</span><span class="params">(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        System.out.println(<span class="string">"MyTestInterceptor.postHandle"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//需要当前对应的Interceptor 的preHandle 方法的返回值为true 时才会执行</span></div><div class="line">    <span class="comment">//该方法将在整个请求结束之后，也就是在DispatcherServlet 渲染了对应的视图之后执行。这个方法的主要作用是用于进行资源清理工作的。</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterCompletion</span><span class="params">(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        System.out.println(<span class="string">"MyTestInterceptor.afterCompletion"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>实现WebRequestInteceptor接口的拦截器的栗子：</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<ul>
+<li><strong>拦截器的xml配置</strong></li>
+<li><p>配置成全局的拦截器</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">mvc:interceptors</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"em.interceptor.MyTestInterceptor"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">mvc:interceptors</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>配制成指定路径的拦截器</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">mvc:interceptors</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">mvc:interceptor</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">mvc:mapping</span> <span class="attr">path</span>=<span class="string">"/ex2/*"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"em.interceptor.MyTestInterceptor"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">mvc:interceptor</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">mvc:interceptors</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-SSH" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
